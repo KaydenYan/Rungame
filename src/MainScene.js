@@ -81,10 +81,10 @@ var MainLayer = cc.Layer.extend({
     addMenuBtn:function () {
         var that = this;
         //控制按钮
-        var leftItem = new cc.MenuItemFont("P1_Jump", function () {
+        var leftItem = new cc.MenuItemFont("玩家1跳跃", function () {
             that.runner[0].runAction(cc.jumpBy(1.0,0,0,150,1));
         }, this);
-        var rightItem = new cc.MenuItemFont("P2_Jump", function () {
+        var rightItem = new cc.MenuItemFont("玩家2跳跃", function () {
             that.runner[1].runAction(cc.jumpBy(1.0,0,0,150,1));
         }, this);
         leftItem.setFontSize(60);
